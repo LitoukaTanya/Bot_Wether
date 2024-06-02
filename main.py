@@ -8,7 +8,8 @@ API = "1495b3fc5ef5adfd1b4820b499ba632a"
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id, f"Привет {message.chat.first_name}, напиши в каком городе тебя интересует погода")
+    bot.send_message(message.chat.id, f"Привет, {message.chat.first_name}! 👋\n\n"
+        "Я погодный бот. 🌤️ Напиши мне название города, и я скажу тебе текущую погоду в этом месте. ")
 
 
 @bot.message_handler(content_types=['text'])
